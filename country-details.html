@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <!-- Add any necessary styles or scripts here -->
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="dark:text-white dark:bg-[#273136]">
+
+    <!-- HEADER START -->
+    <header class="py-[30px] mb-[30px] md:py-6 shadow-sm dark:bg-[#2B3844] transition-colors">
+        <div class="max-w-[1309px] w-full mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <h1>
+                    <a class="text-[#111517] text-sm md:text-2xl font-extrabold dark:text-white" href="./index.html">
+                        Where in the world?
+                    </a>
+                </h1>
+                
+                <input id="searchInput" class="p-3 border-2 rounded-md me-10 w-96 dark:bg-[#2B3844] dark:text-white" type="text" placeholder="Search">
+                
+                <button id="toggleDarkMode" class="mode-btn flex items-center text-[#111517] text-xs md:text-base dark:text-white">
+                    <img class="mode-icon w-4 h-4 md:w-5 md:h-5 me-2" src="./img/moon-light-icon.svg" alt="Color mode icon">
+                    Dark Mode
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- MAIN CONTENT START -->
+    <div class="w-[500px] mx-auto ">
+        <h1 class="text-[#111517] text-[36px] font-semibold dark:text-white">Country Details</h1>
+        <div id="country-details">
+
+        </div>
+    </div>
+    <!-- MAIN CONTENT END -->
+
+    <script src="./js/country-details.js"></script>
+</body>
+</html>
